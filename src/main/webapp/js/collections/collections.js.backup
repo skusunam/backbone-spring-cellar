@@ -1,0 +1,15 @@
+define([
+    'backbone',
+    'models/models'
+], function(Backbone, Wine) {
+
+	var WineCollection = Backbone.Collection.extend({
+
+	    model: Wine,
+
+	    url: "api/wines"
+
+	});
+
+	return WineCollection;
+});
