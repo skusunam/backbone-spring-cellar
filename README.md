@@ -2,8 +2,6 @@
 
 This is a popular "backbone.cellar" sample application from @ccoenraets hosted @https://github.com/ccoenraets/backbone-cellar/ with SpringMVC as RESTful service. 
 
-"Backbone Cellar" is a sample application built with Backbone.js. IT used "backbone.paginator" plugin for implementing server side pagination
-i.e requestPager module (please read backbone.paginator's README).
 
 Original example is modified to achieve these:
 
