@@ -16,8 +16,8 @@ define([
         },
 
         events: { 
-        'click li#prev': 'requestPreviousPage',
-        'click li#next': 'requestNextPage'
+        'click a#prev': 'requestPreviousPage',
+        'click a#next': 'requestNextPage'
         },
 
         render:function () {
@@ -28,8 +28,13 @@ define([
             $(this.el).html('<ul />');
 
             var totalPages = this.model.totalPages;
-
-            $('ul', this.el).append(this.template());
+        
+            var templateData = {
+                hasPrevious: this.model.info().hasPrevious,
+                hasNext: this.model.info().hasNext   
+            };
+   
+            $('ul', this.el).append(this.template(templateData));
             // for (var i = 0; i <= totalPages; i++) {
             //     $('ul', this.el).append("<li" + ((i + 1) === this.options.page ? " class='active'" : "") + 
             //         "><a href='#wines/page/"+(i+1)+"'>" + (i+1) + "</a></li>");

@@ -1,2 +1,19 @@
-<li id="prev">Prev</li>
-<li id="next">Next</li>
+<% if (hasPrevious){ %>
+<li>
+	<a id="prev" class="fs-ctrl-view-cover" href="#">Prev</a>
+</li>
+<% } else { %>
+<li class="active">
+	<a class="fs-ctrl-view-cover" href="#">Prev</a>
+</li>
+<% } %>
+
+<% if (hasNext){ %>
+<li>
+	<a id="next" class="fs-ctrl-view-list" href="#">Next</a>
+</li>
+<% } else { %>
+<li class="active">
+	<a class="fs-ctrl-view-list" href="#">Next</a>
+</li>
+<% } %>
