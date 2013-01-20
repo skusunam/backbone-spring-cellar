@@ -12,3 +12,5 @@ Original example is modified to achieve these:
 How to run:
 
 * You need Maven2 to run this project
+* Run <code>mvn tomcat:run</code>
+* Hit this URL in your favorite browser: http://localhost:8080/cellar/
